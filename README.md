@@ -1,0 +1,1 @@
+This is a Odin's project that consists in build a rock, paper, scissors game using javascript
