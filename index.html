@@ -6,8 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header id="headerCont">
+        <h1>ROCK PAPPER SCISSORS</h1>
+    </header>
+
+    <main class="main">
+        <div class="scoreContainers">
+            <div class="scoreBox">
+                <div class="playerContainer">
+                    <h2 class="player">Player</h2>
+                    <div class="playerChose"></div>
+                    <p class="score" id="playerScore">Points: 0</p>
+                </div>
+                <div class="cpuContainer">
+                    <h2 class="player">CPU</h2>
+                    <div class="cpuChose"></div>
+                    <p class="score" id="cpuScore">Points: 0</p>
+                </div>
+            </div>
+        </div>
+    <div class="playContainer">
+        <div class="info">
+            <h2>Chose your weapon!</h2>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="rockBtn">
+                <div class="hand">
+                    <img src="" alt="rock">
+                </div>
+            </button>
+            <button class="btn" id="papperBtn">
+                <div class="hand">
+                    <img src="" alt="papper">
+                </div>
+            </button>
+            <button class="btn" id="scissorsBtn">
+                <div class="hand">
+                    <img src="" alt="scissors">
+                </div>
+            </button>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+        <p>Copyright ©</p>
+        <a href="https://github.com/arthurlorenzon">arthurlorenzon</a>
+    </footer>
 </body>
 </html>
