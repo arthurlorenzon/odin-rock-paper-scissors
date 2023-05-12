@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
+    <title>Rock paper scissors game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header id="headerCont">
-        <h1>ROCK PAPPER SCISSORS</h1>
+        <h1 class="tittle">ROCK PAPER SCISSORS</h1>
     </header>
 
     <main class="main">
@@ -18,34 +17,37 @@
             <div class="scoreBox">
                 <div class="playerContainer">
                     <h2 class="player">Player</h2>
-                    <div class="playerChose"></div>
+                    <div class="playerChose" id="playerChose"></div>
                     <p class="score" id="playerScore">Points: 0</p>
                 </div>
                 <div class="cpuContainer">
                     <h2 class="player">CPU</h2>
-                    <div class="cpuChose"></div>
-                    <p class="score" id="cpuScore">Points: 0</p>
+                    <div class="cpuChose" id="cpuChose"></div>
+                    <p class="score" id="computerScore">Points: 0</p>
                 </div>
             </div>
         </div>
     <div class="playContainer">
-        <div class="info">
+        <div class="scoreInfo" id="scoreInfo">
             <h2>Chose your weapon!</h2>
+            <h3 class="score-message" id="scoreMessage">
+                First to score 5 points wins the game
+            </h3>
         </div>
         <div class="buttons">
-            <button class="btn" id="rockBtn">
+            <button class="btn" id="rockButton">
                 <div class="hand">
-                    <img src="" alt="rock">
+                    <img src="./img/rock.png" alt="rock">
                 </div>
             </button>
-            <button class="btn" id="papperBtn">
+            <button class="btn" id="paperButton">
                 <div class="hand">
-                    <img src="" alt="papper">
+                    <img src="./img/paper.png" alt="paper">
                 </div>
             </button>
-            <button class="btn" id="scissorsBtn">
+            <button class="btn" id="scissorsButton">
                 <div class="hand">
-                    <img src="" alt="scissors">
+                    <img src="./img/scissors.png" alt="scissors">
                 </div>
             </button>
         </div>
@@ -53,8 +55,15 @@
     </main>
 
     <footer>
-        <p>Copyright ©</p>
+        <p>Copyright ©
         <a href="https://github.com/arthurlorenzon">arthurlorenzon</a>
+        </p>
     </footer>
+    <div class="modal" id="endgameModal">
+        <p class="modal-title" id="endgameMsg"></p>
+        <button id="restartButton">Play again</button>
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="./script.js"></script>
 </body>
 </html>
