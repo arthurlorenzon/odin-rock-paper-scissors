@@ -159,6 +159,8 @@ function restartGame() {
   scoreMessage.textContent = 'First to score 5 points wins the game'
   playerScorePara.textContent = 'Player: 0'
   computerScorePara.textContent = 'Computer: 0'
+  playerChose.textContent = '❔'
+  cpuChose.textContent = '❔'
   endgameModal.classList.remove('active')
   overlay.classList.remove('active')
 }
