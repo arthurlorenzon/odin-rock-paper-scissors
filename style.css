@@ -1,0 +1,57 @@
+body {
+    font-family: andale mono, monospace;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #020c44e8;
+}
+
+.tittle {
+    color: #02d193;
+}
+
+.scoreBox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e1e2e2e7;
+}
+
+.playContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+
+img {
+    width: 80px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
